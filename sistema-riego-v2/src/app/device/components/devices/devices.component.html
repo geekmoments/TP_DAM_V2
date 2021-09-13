@@ -1,0 +1,8 @@
+ <div class='device-grid'>
+
+  <app-device *ngFor="let device of devices"
+    (deviceClicked)="clickDevice($event)"
+    [device]="device" >
+  </app-device>
+
+</div>

@@ -1,0 +1,21 @@
+<div *ngIf="device">
+  <div>
+   <!-- <img [src]="device.image" alt="device">-->
+   <div id="highcharts" style="width:100%; height:300px;"></div>
+
+  </div>
+  <div>
+
+    <ul>
+      <li>Dispositivo:{{ device.title }}</li>
+      <li>Desripción:{{ device.description}}</li>
+    </ul>
+
+  </div>
+
+  <button (click)="addDevice()" >Agregar Dispositivo</button>
+  <button (click)="updateDevice()" >Actualizar dispositivo</button>
+  <button (click)="deleteDevice()" >Eliminar dispositivo</button>
+
+
+</div>
